@@ -32,7 +32,9 @@ const LandingPage = () => {
         <span className="icon">🥓</span>
       </div>
         <div className="pizza" ref={pizzaRef}>
-          <img src="pizza_cutout.png" alt="Pizza" className="pizza-image" />
+        <img src={require('../Images/pizza_cutout.jpg')} alt="Pizza" className="pizza-image" />
+
+          {/* <img src="\Images\pizza_cutout.png" alt="Pizza" className="pizza-image" /> */}
         </div>
        
         <div className="text-content">
