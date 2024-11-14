@@ -1,0 +1,70 @@
+/* Testimonials.css */
+
+.testimonials {
+    
+    padding: 50px 20px ;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.testimonial-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.testimonial-item p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.testimonial-item h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.testimonial-item::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: -15px;
+    bottom: -15px;
+    background: linear-gradient(45deg, rgba(255, 182, 68, 0.6), rgba(250, 85, 85, 0.6));
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.testimonial-item:hover::before {
+    background: linear-gradient(45deg, rgba(255, 182, 68, 0.9), rgba(250, 85, 85, 0.9));
+}

@@ -1,0 +1,29 @@
+.menu-highlights {
+    padding: 2rem;
+    text-align: center;
+}
+
+.pizza-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pizza-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    width: 250px;
+    background-color: #fff;
+}
+
+.pizza-item h3 {
+    color: #333;
+}
+
+.pizza-item span {
+    font-weight: bold;
+    color: #ff5722;
+}
+

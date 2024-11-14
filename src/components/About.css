@@ -1,0 +1,93 @@
+/* About Section */
+.about-section {
+    /* background: url('../Images/olives.jpg') no-repeat center center/cover; */
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 1;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-team {
+    text-align: center;
+  }
+  
+  .about-team h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .team-member {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 4px solid #ff6347;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .team-members {
+      flex-direction: column;
+    }
+    
+    .team-member img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .about-title {
+      font-size: 2.5rem;
+    }
+  
+    .about-description {
+      font-size: 1.1rem;
+    }
+  
+    .about-team h3 {
+      font-size: 1.8rem;
+    }
+  }
+  

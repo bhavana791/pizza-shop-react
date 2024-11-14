@@ -1,0 +1,96 @@
+.contact-us-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+  }
+  
+  /* Adding the background image with 0.5 opacity */
+  .contact-us-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../Images/contact.jpg');  /* Path to your pizza image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9; /* Adjust opacity to 0.5 */
+    z-index: 0;
+  }
+  
+  /* Ensure text content appears above the overlay */
+  .contact-us-section h2,
+  .contact-us-section p,
+  .contact-form {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-us-section h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-us-section p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+  }
+  
+  .contact-form label {
+    color: #ddd;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #ff6347; /* Accent color for the pizza theme */
+    box-shadow: 0 0 5px rgba(255, 99, 71, 0.3);
+    outline: none;
+  }
+  
+  .submit-btn {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #ff4500;
+  }
+  

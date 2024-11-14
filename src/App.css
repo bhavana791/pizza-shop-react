@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+/* Background Animation for Entire Page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: rgb(34, 31, 31);
+  background-size: 300% 300%;
+  animation: bgShift 10s infinite ease-in-out;
+  overflow-x: hidden;
+}
+
+/* Background Gradient Animation */
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
